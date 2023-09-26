@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito:wght@400;700&family=Press+Start+2P&family=Raleway:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito:wght@400;700&family=Press+Start+2P&family=Prompt:wght@400;700;900&family=Raleway:wght@400;600;700&family=Roboto:wght@400;700;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #5c58b6;
+  font-family: 'Prompt', sans-serif;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content{
+  width: 90%;
+  height: 100%;
+  max-width: 1440px;
+  margin: auto;
+  /* background-color: lightsalmon; */
+}
+
+header{
+  width: 100%;
+  height: 150px;
+  background-color: #b957ce;
+}
+
+h1, h2{
+ font-family: 'Press Start 2P', cursive;
+}
+
+.logo{
+  /* background-color: pink; */
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  text-shadow: 2px 2px 1px black, -2px 2px 1px black, 2px -2px 1px black, -2px -2px 1px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo h1{
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.logo h2{
+  font-size: 10px;
+}
+
+.menu ul{
+  display: flex;
+}
+
+.menu ul li{
+  margin-left: 150px;
+  list-style-type: none;
+}
+
+.menu ul li a{
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  text-shadow: 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black;
+  text-decoration: none;
+  padding: 15px;
+  background-color: #5994ce;
+  border: solid 2px white;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 13px;
+}
+
+.menu ul li a:hover{
+  border-radius: 20px;
+  border: solid 2px orange;
+  color: yellow;
+}
+
+.navbar{
+  display: none;
+}
+
+.banner{
+  width: 100%;
+  height: 350px;
+  background-image: url(../image/jogos_img/retro_game.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 2'em;
+}
+
+.flex_banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.banner h2{
+  color: #b957ce;
+  font-size: 100px;
+  text-shadow: 2px 2px 1px black, -2px 2px 1px black, 2px -2px 1px black, -2px -2px 1px black;
+}
+
+.flex_banner_01{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text_01 p{
+  font-size: 21px;
+  color: white;
+  line-height: 38px;
+  width: 90%;
+  margin-top: 1.5em;
+  margin-left: 4em;
+}
+
+.jogo{
+  margin: 40px 60px;
+}
+
+.jogo img{
+  width: 240px;
+  height: 350px;
+  border-radius: 20px;
+  border: solid 2px white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.jogo img:hover{
+  width: 250px;
+  height: 360px;
+  border: solid 2px #b957ce;
+}
+
+.jogos{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer{
+  color: white;
+  background-color: #b957ce;
+  font-size: 16px;
+  padding: 1em;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+}
+
+@media(max-width:1439px){
+  .menu ul li{
+    margin-left: 70px;
+  }
+
+  .jogo img{
+    width: 180px;
+    height: 270px;
+  }
+
+  .jogo img:hover{
+    width: 200px;
+    height: 310px;
+    border: solid 2px #b957ce;
+  }
+}
+
+@media(max-width:1023px){
+  .menu ul li{
+    margin-left: 30px;
+  }
+
+  .menu ul li a{
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .logo h1{
+    font-size: 28px;
+  }
+
+  .logo h2{
+    font-size: 9px;
+  }
+
+  .banner h2{
+    font-size: 80px;
+  }
+
+  .text_01 p{
+    font-size: 18px;
+    line-height: 30px;
+    margin-left: 0;
+  }
+  .jogo{
+    margin: 30px 20px;
+  }
+
+  footer{
+    font-size: 12px;
+  }
+}
+
+@media(max-width:767px){
+  .menu{
+    display: none;
+  }
+
+  span{
+    background-color: #5994ce;
+    border: solid 2px white;
+    color: white;
+    padding: 3px 10px;
+    font-size: 25px;
+  }
+
+  .navbar{
+    display: block;
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #b857ce6b;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    background-color: #5994ce;
+    border-radius: 30px;
+    display: block;
+    transition: 0.3s;
+    margin-bottom: 90px;
+    font-family: 'Press Start 2P', cursive;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  .banner h2{
+    font-size: 70px;
+  }
+
+  .text_01 p{
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    margin-left: 20px;
+  }
+
+  .jogos img{
+    width: 150px;
+    height: 230px;
+  }
+}
+
+@media(max-width:423px){
+  .logo h1{
+    font-size: 20px;
+  }
+
+  .logo h2{
+    font-size: 7px;
+  }
+
+  .banner h2{
+    font-size: 50px;
+  }
+
+  .jogos{
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .jogos img{
+    width: 200px;
+    height: 270px;
+  }
+
+  main .content {
+    display: block;
+  }
+}

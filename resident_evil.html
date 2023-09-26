@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameBoum - Resident Evil 2 Remake</title>
+  <link rel="stylesheet" href="./css/resident_evil.css">
+  <link rel="stylesheet" href="./css/modal.css">
+</head>
+<body>
+  <header>
+    <div class="content flex">
+      <div class="logo">
+        <h1>Game Boum</h1>
+        <h2>Bem-vindx ao Mundo dos Games</h2>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="./index.html"> INÍCIO  </a></li>
+          <li><a href="./jogos.html"> JOGOS   </a></li>
+          <li><a onclick="abrirModal()"> CONTATO </a></li>
+        </ul>
+      </nav>
+      <!-- NAV BAR -->
+      <div class="navbar">
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a onclick="closeNav()" href="./index.html">Início</a>
+            <a onclick="closeNav()" href="./jogos.html">Jogos</a>
+            <a onclick="closeNav(), abrirModal()">Contato</a>
+          </div>
+        </div>
+        <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+      <!-- FIM DA NAV BAR -->
+    </div>
+  </header>
+
+  <section class="banner flex_banner">
+    <h2>RESIDENT EVIL 2 REMAKE</h2>
+  </section>
+
+  <main>
+    <div class="content">
+      <section class="text_01 ">
+        <div class="flex">
+          <h3>SINOPSE</h3>
+          <P>Uma cidade dominada por um vírus mortal que transformou todos em zumbis, um policial novato e uma mulher procurando por seu irmão desaparecido, bem-vindx ao pesadelo de Raccon City.</P>
+          <img src="./image/resident_img/sinopse.jpg" alt="Leon e Claire cercados por zumbis.">
+        
+        
+          <h3>ANÁLISE</h3>
+          
+          <h4>HISTÓRIA</h4>
+            <p>Como diz o nome do game "Remake" este é a reamaginação de um game clássico da série Resident Evil, então não tanto o que dizer sobre a história deste senão compará-la com sua original. Na maior parte do game foi mantida a essência do seu original com apenas poucas diferenças e a adição de novos momentos para deixar a história mais profunda, enfim, o fizeram com sucesso pois pegaram fatores do original que já eram bons e melhoraram sem roubar a essência do jogo e perder a nostalgia dos fans.</p>
+            <img src="./image/resident_img/historia.jpg" alt="Leon e Claire armados dentro da R.P.D.">
+
+          <h4>JOGABILIDADE</h4>
+          <p>A jogabilidade de Resident Evil é simples, mas responde bem a proposta do jogo, você pode andar, correr, mirar, atirar, esfaquear, se livrar dos enimigos com facas, pegar itens, usar itens, subir ou descer escadas de mão. Nada muito inovador mas funcional e prático.</p>
+          <img src="./image/resident_img/jogabilidade.jpg" alt="Leon esfaqueando um zumbi que tenta mordelo.">
+
+          <h4>GRÁFICOS</h4>
+          <p>Sem dúvidas o que mais empolgou os fans foi poder ver os cenários que antes pixelados pelo o original ser um jogo antigo, agora com gráficos de nova geração e isto a Capcom fez com esselência! Os gráficos são muito bonitos e impressionantemente realistas, sem dúvidas os cenários escuros e sombrios ajudou a esconder muitos defeitos gráficos, mas dentro do que se pode ver é impressionante.</p>
+          <img src="./image/resident_img/grafico.jpg" alt="Entrada da R.P.D infestada de zumbis com a cidade toda destruida.">
+
+          <h4>TRILHA SONORA</h4>
+          <p>Não há muita presença de trilha sonora no game, além dos momentos de batalha contra chefes do jogo, a critério de trilha sonora o game não trouxe nada memorável.</p>
+
+          <h4>NOTA</h4>
+
+          <h5>9.5</h5>
+          
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy;Todos os direitos reservados</p>
+  </footer>
+
+  <div class="modal flex">
+    <div class="content_modal">
+        <span onclick="fecharModal()" id="fechar_modal">X</span>
+        <form class="formulario_contato">
+            <label for="input_nome">Digite seu nome</label>
+            <input class="input" id="input_nome" type="text" placeholder="Ex: Joy Sanchez">
+
+            <label for="input_mensagem">Digite sua mensagem</label>
+            <textarea class="input" id="input_mensagem" rows="1" maxlength="280"></textarea>
+
+            <button onclick="enviarMensagem()" type="button" id="btn_mensagem">Enviar Mensagem</button>
+        </form>
+    </div>
+  </div>
+
+  <script src="./js/script.js"></script>
+
+</body>
+</html>

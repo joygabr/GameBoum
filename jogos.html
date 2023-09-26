@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameBoum - Jogos</title>
+  <link rel="stylesheet" href="./css/jogos.css">
+  <link rel="stylesheet" href="./css/modal.css">
+</head>
+<body>
+  <header>
+    <div class="content flex">
+      <div class="logo">
+        <h1>Game Boum</h1>
+        <h2>Bem-vindx ao Mundo dos Games</h2>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="./index.html"> INÍCIO  </a></li>
+          <li><a href="./jogos.html"> JOGOS   </a></li>
+          <li><a onclick="abrirModal()"> CONTATO </a></li>
+        </ul>
+      </nav>
+      <!-- NAV BAR -->
+      <div class="navbar">
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a onclick="closeNav()" href="./index.html">Início</a>
+            <a onclick="closeNav()" href="./jogos.html">Jogos</a>
+            <a onclick="closeNav(), abrirModal()">Contato</a>
+          </div>
+        </div>
+        <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+      <!-- FIM DA NAV BAR -->
+    </div>
+  </header>
+
+  <section class="banner flex_banner">
+    <div class="content flex_banner_01">
+      <h2>JOGOS</h2>
+      <div class="text_01">
+        <p>Apesar de toda diversidade e infinitas possibilidades que existem em um jogo de videogame ainda é possível encaixa-los dentro de classificações e de forma crítica analisar se foram capazes de entregar aquilo que se proporam a nos fazer experenciar.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <main>
+
+    <div class="content flex">
+      <section>
+        <div class="jogos">
+          <div class="jogo">
+            <a href="./The_Last_of_Us_page.html"><img src="./image/jogos_img/ellie.jpg" alt="Capa de um game chamado The Last of Us Part II."></a>
+          </div>
+          <div class="jogo">
+            <a href="./resident_evil.html"><img src="./image/jogos_img/re2.jpg" alt="Capa de um game chamado Resident Evil 2: Remake."></a>
+          </div>
+          <div class="jogo">
+            <a href="./battlefield.html"><img src="./image/jogos_img/bf1.jpg" alt="Capa de um game chamado Battlefield 1."></a>
+          </div>
+
+          <div class="jogo">
+            <a href="./lorem.html"><img src="./image/jogos_img/gow.jpg" alt="Capa de um game chamado God of War IV."></a>
+          </div>
+          <div class="jogo">
+            <a href="./lorem.html"><img src="./image/jogos_img/ac.jpg" alt="Capa de um game chamado Assassins Creed Valhalla."></a>
+          </div>
+          <div class="jogo">
+            <a href="./lorem.html"><img src="./image/jogos_img/out.jpg" alt="Capa de um game chamado Outlast."></a>
+          </div>
+
+          <div class="jogo">
+            <a href="./lorem.html"><img src="./image/jogos_img/cod_black3.jpg" alt="Capa de um game chamado Outlast."></a>
+          </div>
+          <div class="jogo">
+            <a href="./lorem.html"><img src="./image/jogos_img/ac_origins.jpg" alt="Capa de um game chamado Outlast."></a>
+          </div>
+          <div class="jogo">
+            <a href="./lorem.html"><img src="./image/jogos_img/minecraft.jpg" alt="Capa de um game chamado Outlast."></a>
+          </div>
+
+          <div class="jogo">
+            <a href="./lorem.html"><img src="./image/jogos_img/gtav.jpg" alt="Capa de um game chamado Outlast."></a>
+          </div>
+          <div class="jogo">
+            <a href="./lorem.html"><img src="./image/jogos_img/mk11.jpg" alt="Capa de um game chamado Outlast."></a>
+          </div>
+          <div class="jogo">
+            <a href="./lorem.html"><img src="./image/jogos_img/gh.jpg" alt="Capa de um game chamado Outlast."></a>
+          </div>
+
+          <div class="jogo">
+            <a href="./lorem.html"><img src="./image/jogos_img/rss.jpg" alt="Capa de um game chamado Outlast."></a>
+          </div>
+          <div class="jogo">
+            <a href="./lorem.html"><img src="./image/jogos_img/ds.png" alt="Capa de um game chamado Outlast."></a>
+          </div>
+          <div class="jogo">
+            <a href="./lorem.html"><img src="./image/jogos_img/naruto.jpg" alt="Capa de um game chamado Outlast."></a>
+          </div>
+
+          <div class="jogo">
+            <a href="./lorem.html"><img src="./image/jogos_img/ellie_01.jpg" alt="Capa de um game chamado Outlast."></a>
+          </div>
+          <div class="jogo">
+            <a href="./lorem.html"><img src="./image/jogos_img/bb.jpg" alt="Capa de um game chamado Outlast."></a>
+          </div>
+          <div class="jogo">
+            <a href="./lorem.html"><img src="./image/jogos_img/ac_black.jpg" alt="Capa de um game chamado Outlast."></a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy;Todos os direitos reservados</p>
+  </footer>
+
+  <div class="modal flex">
+    <div class="content_modal">
+        <span onclick="fecharModal()" id="fechar_modal">X</span>
+        <form class="formulario_contato">
+            <label for="input_nome">Digite seu nome</label>
+            <input class="input" id="input_nome" type="text" placeholder="Ex: Joy Sanchez">
+
+            <label for="input_mensagem">Digite sua mensagem</label>
+            <textarea class="input" id="input_mensagem" rows="1" maxlength="280"></textarea>
+
+            <button onclick="enviarMensagem()" type="button" id="btn_mensagem">Enviar Mensagem</button>
+        </form>
+    </div>
+  </div>
+
+  <script src="./js/script.js"></script>
+
+</body>
+</html>

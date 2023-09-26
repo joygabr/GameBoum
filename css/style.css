@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito:wght@400;700&family=Press+Start+2P&family=Raleway:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito:wght@400;700&family=Press+Start+2P&family=Prompt:wght@400;700;900&family=Raleway:wght@400;600;700&family=Roboto:wght@400;700;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+body{
+  background-color: #5c58b6;
+  font-family: 'Prompt', sans-serif;
+}
+
+header{
+  font-family: 'Press Start 2P', cursive;
+  background-image: url(../image/index_img/banner.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.content{
+  width: 90%;
+  height: 100%;
+  max-width: 1440px;
+  margin: auto;
+  /* background-color: lightsalmon; */
+}
+
+.menu{
+  /* background-color: pink; */
+  height: 50px;
+  margin-bottom: 39vh;
+}
+
+.menu ul{
+  display: flex;
+  justify-content: center;
+}
+
+.menu ul li{
+  margin: 60px 40px 0 40px;
+  list-style-type: none;
+}
+
+.menu ul li a{
+  background-color: #b957ce;
+  border: solid 2px white;
+  text-decoration: none;
+  padding: 15px;
+  color: white;
+  text-shadow: 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 13px;
+}
+
+.menu ul li a:hover{
+  border: solid 2px orange;
+  border-radius: 20px;
+  color: yellow;
+}
+
+.navbar{
+  display: none;
+}
+
+.logo{
+  text-align: center;
+  color: white;
+  text-shadow: 5px 5px 1px black, -5px 5px 1px black, 5px -5px 1px black, 5px 5px 1px black;
+}
+
+.logo h1{
+  font-size: 100px;
+  margin-bottom: 20px;
+}
+
+.logo h2{
+  font-size: 35px
+}
+
+main h1, main h2{
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  text-shadow: 2px 2px 1px black, -2px 2px 1px black, 2px -2px 1px black, 2px 2px 1px black;
+  text-align: center;
+}
+
+.text_01 h2, .games h2{
+  font-size: 35px;
+  margin-top: 80px;
+  margin-bottom: 2em;
+  color: #b957ce;
+}
+
+.text_01{
+  flex-direction: column;
+}
+
+.text_01 p{
+  font-size: 21px;
+  color: white;
+  line-height: 38px;
+}
+
+.text_01 img{
+  margin: 2.5em 0;
+  width: 500px;
+}
+
+.games{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jogos{
+  width: 100%;
+}
+
+.jogos img{
+  width: 240px;
+  height: 350px;
+  border-radius: 20px;
+  border: solid 2px white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.jogos img:hover{
+  width: 250px;
+  height: 360px;
+  border: solid 2px #b957ce;
+}
+
+.jogo{
+  margin-top: 20px;
+}
+
+.games_button{
+  margin: 4em 0;
+}
+
+.games_button a{
+ padding: 15px 30px;
+ font-weight: bold;
+ border: solid 2px white;
+ color: white;
+ background-color: #b957ce;
+ font-family: 'Press Start 2P', cursive;
+ text-decoration: none;
+ cursor: pointer;
+ text-shadow: 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black;
+ transition: 0.3s;
+}
+
+.games_button a:hover{
+  border: solid 2px orange;
+  border-radius: 20px;
+  color: yellow;
+}
+
+footer{
+  color: white;
+  background-color: #b957ce;
+  font-size: 16px;
+  padding: 1em;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+}
+
+@media(max-width:1023px){
+  .menu{
+    margin-bottom: 42%;
+  }
+
+  .logo h1{
+    font-size: 70px;
+  }
+  
+  .logo h2{
+    font-size: 24px;
+  }
+
+  .text_01 h2{
+    font-size: 30px;
+  }
+
+  .text_01 p{
+    font-size: 18px;
+  }
+
+  .jogos img{
+    width: 200px;
+    height: 300px;
+  }
+}
+
+@media(max-width:767px){
+  .menu{
+    display: none;
+  }
+
+  span{
+    background-color: #b957ce;
+    border: solid 2px white;
+    color: white;
+    padding: 10px 10px 20px 10px;
+  }
+
+  .navbar{
+    display: block;
+    margin-bottom: 60%;
+    padding-top: 20px;
+  }
+
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #b857ce6b;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    background-color: #5994ce;
+    border-radius: 30px;
+    display: block;
+    transition: 0.3s;
+    margin-bottom: 90px;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  .logo h1{
+    font-size: 40px;
+    text-shadow: 3px 3px 1px black, -3px 3px 1px black, 3px -3px 1px black, 3px 3px 1px black;
+    
+  }
+
+  .logo h2{
+    font-size: 13px;
+    text-shadow: 2px 2px 1px black, -2px 2px 1px black, 2px -2px 1px black, 2px 2px 1px black;
+  }
+
+  .text_01 p{
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .text_01 h2, .games h2{
+    font-size: 25px;
+  }
+
+  .text_01 img{
+    width: 360px;
+  }
+
+  .jogos{
+    flex-direction: column;
+  }
+
+  footer p{
+    font-size: 12px;
+  }
+}
+
+@media(max-width:423px){
+  .logo h1{
+    font-size: 32px;
+  }
+  
+  .logo h2{
+    font-size: 10px;
+  }
+
+  .navbar{
+    margin-bottom: 95%;
+  }
+
+  .text_01 p{
+    font-size: 15px;
+  }
+
+  .text_01 img{
+    width: 280px;
+  }
+
+  footer p{
+    font-size: 12px;
+  }
+}

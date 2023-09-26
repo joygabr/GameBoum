@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito:wght@400;700&family=Press+Start+2P&family=Raleway:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito:wght@400;700&family=Press+Start+2P&family=Prompt:wght@400;700;900&family=Raleway:wght@400;600;700&family=Roboto:wght@400;700;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #5c58b6;
+  font-family: 'Prompt', sans-serif;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content{
+  width: 90%;
+  height: 100%;
+  max-width: 1440px;
+  margin: auto;
+  /* background-color: lightsalmon; */
+}
+
+header{
+  width: 100%;
+  height: 150px;
+  background-color: #b957ce;
+}
+
+.logo{
+  /* background-color: pink; */
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  text-shadow: 2px 2px 1px black, -2px 2px 1px black, 2px -2px 1px black, -2px -2px 1px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo h1{
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.logo h2{
+  font-size: 10px;
+}
+
+.menu ul{
+  display: flex;
+}
+
+.menu ul li{
+  margin-left: 150px;
+  list-style-type: none;
+}
+
+.menu ul li a{
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  text-shadow: 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black;
+  text-decoration: none;
+  padding: 15px;
+  background-color: #5994ce;
+  border: solid 2px white;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 13px;
+}
+
+.menu ul li a:hover{
+  border-radius: 20px;
+  border: solid 2px orange;
+  color: yellow;
+}
+
+.navbar{
+  display: none;
+}
+
+.banner{
+  background-image: url(../image/lorem_img/cyber_banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: calc(100vh - 150px);
+  /* margin-bottom: 6em; */
+}
+
+.flex_banner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner h2{
+  font-family: 'Press Start 2P', cursive;
+  color: #b957ce;
+  text-shadow: 2px 2px 1px black, -2px 2px 1px black, 2px -2px 1px black, -2px -2px 1px black;
+  text-align: center;
+  /* margin-top: 20px; */
+  font-size: 80px;
+  line-height: 100px;
+}
+
+.text_01 .flex{
+  flex-direction: column;
+}
+
+.text_01 h3{
+  font-family: 'Press Start 2P', cursive;
+  color: #b957ce;
+  text-shadow: 2px 2px 1px black, -2px 2px 1px black, 2px -2px 1px black, -2px -2px 1px black;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 35px;
+}
+
+.text_01 p{
+  font-size: 21px;
+  color: white;
+  line-height: 38px;
+}
+
+.text_01 img{
+  margin: 2.5em 0;
+  width: 500px;
+}
+
+h4{
+  font-size: 30px;
+  margin-top: 1em;
+}
+
+h5{
+  background-color: #b957ce;
+  color: white;
+  margin-top: 2em;
+  margin-bottom: 0.6em;
+  font-size: 30px;
+  padding: 0 10px;
+  border: solid 2px white;
+}
+
+footer{
+  color: white;
+  background-color: #b957ce;
+  font-size: 16px;
+  padding: 1em;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+}
+
+@media(max-width:1439px){
+  .menu ul li{
+    margin-left: 70px;
+  }
+
+  .banner h2{
+    font-size: 73px;
+  }
+}
+
+@media(max-width:1023px){
+  .menu ul li{
+    margin-left: 30px;
+  }
+
+  .menu ul li a{
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .logo h1{
+    font-size: 28px;
+  }
+
+  .logo h2{
+    font-size: 9px;
+  }
+
+  .banner h2{
+    font-size: 50px;
+  }
+
+  .text_01 h3{
+    font-size: 30px;
+  }
+
+  .text_01 p{
+    font-size: 18px;
+    line-height: 30px;
+    margin-left: 0;
+  }
+
+  footer{
+    font-size: 12px;
+  }
+}
+
+@media(max-width:767px){
+  .menu{
+    display: none;
+  }
+
+  span{
+    background-color: #5994ce;
+    border: solid 2px white;
+    color: white;
+    padding: 3px 10px;
+    font-size: 25px;
+  }
+
+  .navbar{
+    display: block;
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #b857ce6b;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    background-color: #5994ce;
+    border-radius: 30px;
+    display: block;
+    transition: 0.3s;
+    margin-bottom: 90px;
+    font-family: 'Press Start 2P', cursive;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  .banner h2{
+    font-size: 45px;
+  }
+
+  .text_01 h3{
+    font-size: 25px;
+  }
+
+  .text_01 p{
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .text_01 img{
+    width: 100%;
+  }
+
+  h4{
+    font-size: 25px;
+  }
+}
+
+@media(max-width:423px){
+  .logo h1{
+    font-size: 20px;
+  }
+
+  .logo h2{
+    font-size: 7px;
+  }
+
+  .banner h2{
+    font-size: 50px;
+    line-height: 85px;
+  }
+
+  .text_01 h3{
+    font-size: 23px;
+  }
+}

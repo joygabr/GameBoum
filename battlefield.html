@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameBoum - Battlefield 1</title>
+  <link rel="stylesheet" href="./css/battlefield.css">
+  <link rel="stylesheet" href="./css/modal.css">
+</head>
+<body>
+  <header>
+    <div class="content flex">
+      <div class="logo">
+        <h1>Game Boum</h1>
+        <h2>Bem-vindx ao Mundo dos Games</h2>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="./index.html"> INÍCIO  </a></li>
+          <li><a href="./jogos.html"> JOGOS   </a></li>
+          <li><a onclick="abrirModal()"> CONTATO </a></li>
+        </ul>
+      </nav>
+      <!-- NAV BAR -->
+      <div class="navbar">
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a onclick="closeNav()" href="./index.html">Início</a>
+            <a onclick="closeNav()" href="./jogos.html">Jogos</a>
+            <a onclick="closeNav(), abrirModal()">Contato</a>
+          </div>
+        </div>
+        <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+      <!-- FIM DA NAV BAR -->
+    </div>
+  </header>
+
+  <section class="banner flex_banner">
+    <h2>BATTLEFIELD 1</h2>
+  </section>
+
+  <main>
+    <div class="content">
+      <section class="text_01 ">
+        <div class="flex">
+          <h3>SINOPSE</h3>
+          <p>Não eram apenas soldados, eram pessoas. Viva histórias grandiosas e também devastadora de soldados que lutaram na Primeira Guerra Mundial.</p>
+          <img src="./image/battlefield_img/bf_sinopse.jpg" alt="Soldados correndo no campo de batalha.">
+        
+        
+          <h3>ANÁLISE</h3>
+          
+          <h4>HISTÓRIA</h4>
+          <p>Em Battlefield 1, você vivenciará uma série do que chamamos Histórias de Guerra: histórias pessoais focando em diferentes protagonistas com diferentes origens e habilidades. Embora nossos personagens estejam em guerra, as histórias em Battlefield 1 são pessoais. São sobre pessoas, e não história ou batalhas.</p>
+          <img src="./image/battlefield_img/bf_historia.jpg" alt="Soldado disparando um lança-chamas em campo de batalha.">
+
+          <h4>MULTIPLAYER</h4>
+          <p>Com um dos melhores multiplayers de jogos de tiro, mais uma vez Battlefield deixa sua marca nos levando para o início do século XX na Primeira Guerra Mundial (1914-1918). Com mapas enormes, 64 jogadores sendo divididos em dois times, com armas, equipamentos e veículos típicos da guerra, além de muitos modos de jogo, Battlefield 1 tem um multiplayer envolvente e instigante, simplesmente imersivo e impressionante, pois as possibilidades são infinitas.</p>
+          <img src="./image/battlefield_img/bf_mult.jpg" alt="Imagem de um gameplay de Battlefield 1.">
+
+          <h4>JOGABILIDADE</h4>
+          <p>Battlefield 1 tem uma jogabilidade básica e comum de games de tiro em primeira pessoa não trazendo muitas novidades, mas funcionando bem. Você pode andar, correr, se agachar, se arrastar no chão, saltar, nadar, dirigir veículos, mirar, atirar, arremessar granadas, usar equipamentos e recarregá-los.</p>
+          <img src="./image/battlefield_img/br_jogabilidade.jpg" alt="Imagem de um gameplay de Battlefield 1.">
+
+          <h4>GRÁFICOS</h4>
+          <p>Sem dúvidas o que mais empolgou os fans foi poder ver os cenários que antes pixelados pelo o original ser um jogo antigo, agora com gráficos de nova geração e isto a Capcom fez com esselência! Os gráficos são muito bonitos e impressionantemente realistas, sem dúvidas os cenários escuros e sombrios ajudou a esconder muitos defeitos gráficos, mas dentro do que se pode ver é impressionante.</p>
+          <img src="./image/battlefield_img/bf_grafico.jpg" alt="Sniper observando o campo de batalha de cima de um monte.">
+
+          <h4>TRILHA SONORA</h4>
+          <p>Sua trilha sonora faz um ótimo trabalho em nos transportar para o contexto histórico da Primeira Guerra Mundial deixando o game ainda mais emocionante.</p>
+          <h4>NOTA</h4>
+
+          <h5>8.9</h5>
+          
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy;Todos os direitos reservados</p>
+  </footer>
+
+  <div class="modal flex">
+    <div class="content_modal">
+        <span onclick="fecharModal()" id="fechar_modal">X</span>
+        <form class="formulario_contato">
+            <label for="input_nome">Digite seu nome</label>
+            <input class="input" id="input_nome" type="text" placeholder="Ex: Joy Sanchez">
+
+            <label for="input_mensagem">Digite sua mensagem</label>
+            <textarea class="input" id="input_mensagem" rows="1" maxlength="280"></textarea>
+
+            <button onclick="enviarMensagem()" type="button" id="btn_mensagem">Enviar Mensagem</button>
+        </form>
+    </div>
+  </div>
+
+  <script src="./js/script.js"></script>
+
+</body>
+</html>

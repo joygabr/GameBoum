@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameBoum - Lorem ipsum</title>
+  <link rel="stylesheet" href="./css/lorem.css">
+  <link rel="stylesheet" href="./css/modal.css">
+</head>
+<body>
+  <header>
+    <div class="content flex">
+      <div class="logo">
+        <h1>Game Boum</h1>
+        <h2>Bem-vindx ao Mundo dos Games</h2>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="./index.html"> INÍCIO  </a></li>
+          <li><a href="./jogos.html"> JOGOS   </a></li>
+          <li><a onclick="abrirModal()"> CONTATO </a></li>
+        </ul>
+      </nav>
+      <!-- NAV BAR -->
+      <div class="navbar">
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a onclick="closeNav()" href="./index.html">Início</a>
+            <a onclick="closeNav()" href="./jogos.html">Jogos</a>
+            <a onclick="closeNav(), abrirModal()">Contato</a>
+          </div>
+        </div>
+        <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+      <!-- FIM DA NAV BAR -->
+    </div>
+  </header>
+
+  <section class="banner flex_banner">
+    <h2>LOREM IPSUM</h2>
+  </section>
+
+  <main>
+    <div class="content">
+      <section class="text_01 ">
+        <div class="flex">
+          <h3>SINOPSE</h3>
+          <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aut placeat quasi laborum unde! Dicta, mollitia labore quidem asperiores molestiae inventore dignissimos nihil dolorum, deserunt debitis natus fugiat corrupti? Fuga.</P>
+          <img src="./image/lorem_img/cyber_image.jpg" alt="Cidade com luzes neon na temática cyberpunk.">
+        
+        
+          <h3>ANÁLISE</h3>
+          
+          <h4>HISTÓRIA</h4>
+          
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat possimus quibusdam accusamus laborum ad repudiandae, dolorem totam, voluptate ab sapiente suscipit, eaque dolore unde. Optio corrupti quos a consequatur incidunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores distinctio omnis quaerat cumque autem. Ratione aperiam reiciendis aspernatur esse nobis labore hic iusto blanditiis possimus consectetur atque perspiciatis, pariatur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae doloremque illum ipsum nisi, facilis veritatis corporis itaque est eligendi rerum ea voluptates! Praesentium excepturi iure aperiam autem voluptates non quia! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus ipsum atque alias rem expedita distinctio accusantium maiores iste nulla, labore aspernatur dolores nesciunt nostrum. Blanditiis quasi obcaecati voluptatum soluta ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptate, totam necessitatibus nisi beatae ex voluptates adipisci aliquam eveniet omnis. Impedit quisquam officia doloremque! Laudantium quidem ducimus delectus exercitationem aliquam!</p>
+
+            <img src="./image/lorem_img/cyber_image.jpg" alt="Cidade com luzes neon na temática cyberpunk.">
+
+          <h4>JOGABILIDADE</h4>
+          <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia reiciendis ipsum alias doloribus hic, facilis quis eaque illo perspiciatis accusamus quibusdam quidem quasi esse sit animi adipisci deleniti voluptatibus deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aperiam sit tempore cupiditate. Ipsa harum quo error, nobis sit nostrum, autem ut provident magni molestias fugit, ratione veniam perspiciatis qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ullam temporibus repellendus cum quasi velit possimus nulla autem, assumenda nesciunt. Perferendis temporibus porro obcaecati dolorem quas odit incidunt eius numquam?</P>
+          <img src="./image/lorem_img/cyber_image.jpg" alt="Cidade com luzes neon na temática cyberpunk.">
+
+          <h4>GRÁFICOS</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur velit quae dicta amet est provident nihil quod voluptate nisi ullam excepturi molestiae explicabo sapiente culpa, ipsa veritatis, iure sed optio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iste laboriosam fugit enim magnam ut commodi magni ducimus. Doloremque, quas delectus dignissimos quaerat pariatur veritatis alias iusto rem soluta eos.</p>
+          <img src="./image/lorem_img/cyber_image.jpg" alt="Cidade com luzes neon na temática cyberpunk.">
+
+          <h4>TRILHA SONORA</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae labore obcaecati odit officia, porro laboriosam debitis, officiis eum eveniet sapiente soluta dolores reiciendis ullam iste, autem velit doloribus! Rerum, laboriosam!.</p>
+
+          <h4>NOTA</h4>
+
+          <h5>10</h5>
+          
+          
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy;Todos os direitos reservados</p>
+  </footer>
+
+  <div class="modal flex">
+    <div class="content_modal">
+        <span onclick="fecharModal()" id="fechar_modal">X</span>
+        <form class="formulario_contato">
+            <label for="input_nome">Digite seu nome</label>
+            <input class="input" id="input_nome" type="text" placeholder="Ex: Joy Sanchez">
+
+            <label for="input_mensagem">Digite sua mensagem</label>
+            <textarea class="input" id="input_mensagem" rows="1" maxlength="280"></textarea>
+
+            <button onclick="enviarMensagem()" type="button" id="btn_mensagem">Enviar Mensagem</button>
+        </form>
+    </div>
+  </div>
+
+  <script src="./js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameBoum - Início</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/modal.css">
+</head>
+<body>
+
+  <header>
+    <div class="content">
+      <nav class="menu">
+        <ul>
+          <li><a href="#"> INÍCIO  </a></li>
+          <li><a href="./jogos.html"> JOGOS   </a></li>
+          <li><a onclick="abrirModal()"> CONTATO </a></li>
+        </ul>
+      </nav>
+
+       <!-- NAV BAR -->
+       <div class="navbar">
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a onclick="closeNav()" href="./index.html">Início</a>
+            <a onclick="closeNav()" href="./jogos.html">Jogos</a>
+            <a onclick="closeNav(), abrirModal()">Contato</a>
+          </div>
+        </div>
+        <span style="font-size:45px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+      <!-- FIM DA NAV BAR -->
+
+      <div class="logo">
+        <h1>GAME BOUM</h1>
+        <h2>Bem-vindx ao Mundo dos Games</h2>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="content">
+      <section>
+        <article class="text_01 flex">
+          <h2>VIDEOGAME</h2>
+          <P>Hoje uma das maiores formas de entretenimento sem sombra de dúvidas é o videogame, ele ira te transportar para diferentes mundos, universos e proporcionar experiências com possibilidades sem fim, esta indústria cresceu de maneira extremamente rápida e assim continua ano após ano. Para alguns só intretenimento, para outros trabalho, mas para muitos até mesmo uma razão de existir lutando em campeonatos mundias, independente disto sempre uma forma de melhorar a qualidade de vida.</P>
+          <img src="./image/index_img/pac_man.png" alt="Imagem de um gameplay de Pac Man.">
+          <p>A produção tanto de games quanto de videogames é um trabalho arduo e extremamente criterioso, sem dúvidas que para o desenvolvimento de um game a imaginação é o real limite, todavia existem uma série de questões técnicas para que o game funcione de forma coesa e seja acessível e de qualidade, o mesmo para o videogame, por isso não é fácil analisar e criticar ambos. Nós da GameBoum vamos te ajudar a saber se aquele game que você tanto espera realmente vale a pena e se os diversos consoles construidos e desenvolvidos estão a nível do que você, como cliente dessas empresas, merece. Vamos nessa? Bem-vindx ao mundo dos games!</p>
+        </article>
+      </section>
+      <section class="games">
+        <h2>ANÁLISES DA SEMANA</h2>
+        <div class="jogos flex">
+          <article class="jogo">
+            <a href="./The_Last_of_Us_page.html"><img src="./image/index_img/ellie.jpg" alt="Capa de um game chamado The Last of Us Part II."></a>
+          </article>
+          <article class="jogo">
+            <a href="./resident_evil.html"><img src="./image/index_img/re2.jpg" alt="Capa de um game chamado Resident Evil 2: Remake."></a>
+          </article>
+          <article class="jogo">
+            <a href="./battlefield.html"><img src="./image/jogos_img/bf1.jpg" alt="Capa de um game chamado Battlefield 1."></a>
+          </article>
+        </div>
+        <button class="games_button"><a href="./jogos.html">Mais jogos</a></button>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy;Todos os direitos reservados</p>
+  </footer>
+  
+  <div class="modal flex">
+    <div class="content_modal">
+        <span onclick="fecharModal()" id="fechar_modal">X</span>
+        <form class="formulario_contato">
+            <label for="input_nome">Digite seu nome</label>
+            <input class="input" id="input_nome" type="text" placeholder="Ex: Joy Sanchez">
+
+            <label for="input_mensagem">Digite sua mensagem</label>
+            <textarea class="input" id="input_mensagem" rows="1" maxlength="280"></textarea>
+
+            <button onclick="enviarMensagem()" type="button" id="btn_mensagem">Enviar Mensagem</button>
+        </form>
+    </div>
+  </div>
+
+  <script src="./js/script.js"></script>
+
+</body>
+</html>
